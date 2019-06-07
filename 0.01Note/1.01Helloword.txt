@@ -1,0 +1,79 @@
+B/S：
+	浏览器/服务器，所有通过浏览器/网址可以直接访问的项目
+	如：百度，淘宝
+C/S：
+	客户端/服务器，所有需要安装客户端的项目
+	如：qq，微信，游戏
+
+指令：
+程序：	
+	来源于生活，对一个事物的既定行为或方式的描述
+	是由一系列指令的集合体
+
+java:
+	java SE: java的基础，包含一系列的接口
+	java EE: 提供了一系列的企业级的解决方案
+	java ME: 移动端
+
+java的执行过程：
+	1. 我们自己写.java结尾的类
+	2. 执行时，编译器会把.java文件编译成.class文件(半成品)
+	3. 由虚拟机(JVM)把.class半成品编译成成品，在各个平台运行
+	
+调字体：
+	window - preferences - gengral - appearance - colors and fonts - basic - text font
+
+新建项目	
+	在左侧窗口右键 - new - java project - 取名 - finish
+在项目上新建包和类：
+	src上右键 - new - package
+	package上右键 - new - class
+	
+main方法：程序的入口
+	public static void main(String[] args){
+	
+	}	
+
+控制台输出：
+	System.out.println();	
+
+注意：
+	1. 类名和文件名一定要一样
+	2. main方法的四要素顺序大小写一个都没能错
+	3. 引号(")和结尾分号(;)必须是英文半角状态下的
+	4. {}大括号都是成对出现的，前期写的所有代码，都在main方法的{}里面
+	
+换行换列：
+	\n  \t	
+
+注释：
+	单行注释：// 单行注释
+	多行注释：/* 多行注释 */
+	特殊注释： /** 特殊注释 */
+
+快捷键：
+	alt + /  : main alt+/      syso alt+/
+	ctrl+shift+f: 自动格式化
+	ctrl+d: 删除一行
+	ctrl+alt+down: 复制一行
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
