@@ -1,0 +1,47 @@
+java中处理文件用File类
+	File file = new File("路径");
+常用方法：
+	exists(): 判断目标是否存在
+	createNewFile(): 创建一个文件
+	delete(): 删除目标
+	
+	isFile(): 判断目标是不是文件
+	isDriectory(): 判断目标是不是文件夹
+	
+	getPath(): 获取到目标的相对路径
+	getAbsolutePath(): 获取到目标的绝对路径
+	getName(): 获取目标的名称
+	length(): 获取目标文件的长度(把文件编译成字节码，字节码的长度)
+	
+相对路径：相对于jvm来说，文件存在的路径
+绝对路径：文件存在磁盘的路径
+
+
+流：
+	按流向分： 对应电脑内存来说
+		输入流： 把外面的东西放入内存中  --> InputStream/Reader
+		输出流： 把内存里的东西拿出去  --> OutputStream/Writer
+	按数据处理分：
+		字节流： 把数据分割成一个一个的字节(byte)进行传输  --> InputStream/OutputStream
+		字符流： 把数据分割成一个一个的字符(char)进行传输  --> Reader/Writer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

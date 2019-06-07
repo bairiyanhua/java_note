@@ -1,0 +1,89 @@
+枚举：
+	由一组固定常量组成的类型
+	关键字：enum
+
+包装类：
+	byte --> Byte
+	short --> Short
+	int --> Integer
+	long --> Long
+	float --> Float
+	double --> Double
+	char --> Character
+	boolean	--> Boolean
+	
+常用方法：
+	把基本数据类型 转成 包装类： valueOf()
+		1. Integer aa = new Integer(250);
+			Integer aa = new Integer("250");
+		2. Integer ee = Integer.valueOf(250);
+			Integer ee = Integer.valueOf("250");
+	
+	把包装类 转成 基本数据类型： xxxValue()
+		int bb = aa.intValue();
+	
+	把包装类 转成 字符串
+		String bb = aa.toString();
+		任何基本数据类型都可以通过 拼接空字符串(+"")来把他们变成字符串
+	
+	★把字符串 转成 基本数据类型： parseXXX()
+		int dd = Integer.parseInt("250");
+	
+装箱：把基本数据类型  转成  包装类
+拆箱：把包装类  转成  基本数据类型	
+	
+Math类：
+	Math.ceil()  向上取整
+	Math.floor()   向下取整
+	★ Math.random()  取0-1之间的随机数	
+	
+	Random ran = new Random();
+	System.out.println(ran.nextInt(9)+1);
+	
+String类：
+	length()
+	isEmpty()
+	charAt()
+	getBytes()
+	equals()
+	startsWith()
+	endsWith()
+	indexOf()
+	lastIndexOf()
+	substring()
+	concat()
+	replace()
+	replaceAll()
+	split()
+	toLowerCase()
+	toUpperCase()
+	trim()
+	toString()	
+	
+StringBuffer
+StringBuilder 拼接字符串，只有一个内存地址，使用方法append()	
+	区别：
+		StringBuffer线性安全的，效率偏低
+		StringBuilder线性不安全的，效率偏高
+	
+Date类： java.util包里的	
+	获取当前时间： Date date = new Date();
+	给日期时间格式化： String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").formate(new Date());
+
+Calendar类：设置时间
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	

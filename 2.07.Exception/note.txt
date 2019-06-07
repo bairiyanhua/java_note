@@ -1,0 +1,28 @@
+解决异常：
+	1.  把可能会出现异常的代码放在try代码块中
+		try{
+			...
+		}catch(xxxException e){
+			e.printStackTrace(); //打印异常
+			String msg = e.getMessage(); // 获取异常的文字信息
+			... 
+		} finally {  //不管程序有没有发生异常，都会执行的代码块
+			...
+		}
+		
+		1). 如果没有异常，程序正常执行完
+		2). 如果try代码块中代码出现异常，会直接跳到catch代码块中
+		3). 在catch代码块中匹配相对应的异常类型
+			如果有，执行对应的代码
+			如果没有，程序会继续出异常，中断，所有在catch中一定要有Exception父类的捕获解决方案
+
+	如果catch块中的return关键字，程序 还是会先执行finally，再回过去执行return	
+	唯一不走finally块的情况是System.exit(1); 程序退出JVM	
+		
+		
+		
+throws 和 throw		
+		
+		
+	
+		

@@ -1,0 +1,29 @@
+File类：
+	处理和文件相关的类
+	方法：
+		createNewFile():创建一个新文件
+		delete():删除
+		exists():判断文件是否存在
+		getName()：获取文件名
+		isFile(): 判断是否是文件
+		isDirectory(): 判断是否是文件夹
+		getPath()：获取文件的相对路径，相对于java的JVM
+		getAbsolutePath():获取文件的绝对路径
+	
+绝对路径：文件保存在磁盘上的路径，通过绝对路径可以直接找到文件
+相对路径：相对于某个路径，默认是java虚拟机
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			

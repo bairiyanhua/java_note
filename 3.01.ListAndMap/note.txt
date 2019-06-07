@@ -1,0 +1,72 @@
+集合：
+	可以自动增加长度的数组，在java中放在java.util包中
+		
+Collection
+	List
+		ArrayList
+		LinkedList
+		Vector
+	Set
+		HashSet
+		TreeSet
+		
+Map
+	HashMap
+	TreeMap
+	
+	Hashtable 安全的
+
+其中，Collection,List,Set,Map都是接口；ArrayList,LinkedList,HashSet,TreeSet,HashMap,TreeMap都是类
+
+List存储一组不唯一，有序的对象
+Set存储一组唯一，无序的对象
+
+Map存储的是一组键值对(key-value)类型的数据
+
+HashMap 和 TreeMap 区别：
+	HashMap的key是可以为null的，TreeMap不行
+HashMap 和 Hashtable 区别：	
+	HashMap线性不安全，Hashtable线性安全
+
+
+ArrayList 和 LinkedList区别：
+	ArrayList：底层是数组，查询效率高，插入删除时，因为后面所有的元素都要改变位置，所以插入删除效率会慢
+	LinkedList：底层是链表式的数据，查询效率低，插入删除时只需要改变指定元素的指向，所以效率会高
+	ArrayList和LinkedList都是线性不安全的，Vector是线性安全的
+
+
+ArrayList常用方法：
+	获取值： get()
+	增加值： add()	
+	长度： size()
+	
+	是否包含： contains()
+	删除： remove()
+	修改： set()
+
+ArrayList默认有10个容量，每次扩充都是原来的1.5倍：  新容量 = 旧容量/2 + 旧容量 + 1
+
+Map常用方法：
+	存值：put(key, value)
+	取值：get(key) 通过key值取value值
+	修改值：put(同一个key, value)
+	获取所有的key: keySet()
+	
+	remove()
+	size()
+	containsKey()
+	containsValue()
+
+Iterator 迭代器
+	Iterator it = keys.iterator();
+	while(it.hasNext()){ //判断是否有下一个，有返回true,没有返回false
+		String key = (String)it.next(); //如果有，取值
+		User user = (User)map.get(key);
+		System.out.println(user.getId() + " : " + user.getUsername() + " - " + user.getPassword());
+	}
+
+泛型：用来规定集合或Map里放的数据是什么类型的
+
+
+
+

@@ -1,0 +1,7 @@
+package com.kgc.exam;
+
+public enum Week {
+	
+	Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+
+}

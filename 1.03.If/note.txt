@@ -1,0 +1,74 @@
+if选择：
+	if(条件){
+		....
+	}
+	
+	if(){
+		...
+	}else{
+		...
+	}
+	
+	if(){
+		...
+	}else if(){
+		...
+	}else if(){
+		...
+	}else{
+		...
+	}
+	
+比较两个值是否相等：
+	==：一般用在数值类的比较，还会比较两个值的内存地址是否相同
+	equals：	用于比较字符串是否相等
+		"男".equals(sex)
+	
+switch选择：
+	switch(表达式){
+		case xx:
+			....
+			break;
+		case xx:
+			....
+			break;
+		case xx:
+			....
+			break;
+		default:
+			...
+			[break;]	
+	}	
+	其中，表达式的类型可以是byte,short,int,char,枚举,String(jdk1.7+)
+	
+switch和if的区别：
+	相同点：都是用来进行多分支选择操作
+	不同点：
+		switch只能做等值判断
+		if不仅可以等值判断，还可以进行范围判断	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
