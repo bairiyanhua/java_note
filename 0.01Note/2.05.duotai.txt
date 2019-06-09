@@ -31,6 +31,8 @@ instanceof：
 	
 Pet pet = new Dog();
 pet.show();	
+
+
 	父类的引用指向子类的对象时，调用方法，调用的是子类里的方法
 	如果想调用父类里的方法
 		1.new 父类()	   Pet pet = new Pet();

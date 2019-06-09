@@ -28,6 +28,7 @@ public class MathMain {
 		System.out.println("×Ü·ÖÊÇ£º" + sum);
 		
 		
+		
 	}
 
 }
