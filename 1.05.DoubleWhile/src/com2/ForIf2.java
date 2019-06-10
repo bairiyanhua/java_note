@@ -1,5 +1,7 @@
 package com2;
 import java.util.Scanner;
+   
+//Ê¹ÓÃcontinueÌø×ª
 
 public class ForIf2 {
 	public static void main(String[] args) {
