@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>QQ注册</title>
+        <style>
+            input {
+                width: 200px;
+            }
+            .form-item {
+                padding: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./image/bg_chs.png" alt="" />
+        <h2>注册账号</h2>
+        <form>
+            <div class="form-item">
+                <span>昵称</span>
+                <input type="text" name="name" />
+                <span>长度为4-10个字符</span>
+            </div>
+            <div class="form-item">
+                <span>密码</span>
+                <input type="password" name="password" />
+                <span>长度为6-16个字符</span>
+            </div>
+            <div class="form-item">
+                <span>确认密码</span>
+                <input type="password" name="password_confirm" />
+                <span>长度为6-16个字符</span>
+            </div>
+            <div class="form-item">
+                <span>手机号码</span>
+                <input type="input" name="phone" />
+                <span>长度为11位,以13|5|7|8开头</span>
+            </div>
+            <div class="form-item">
+                <span>邮箱</span>
+                <input type="email" name="email" />
+            </div>
+            <div class="form-item">
+                <span>年龄</span>
+                <input type="number" name="age" min="1" max="100" step="1" />
+            </div>
+            <div class="form-item">
+                <img src="./image/btn.bmp" alt="" />
+            </div>
+        </form>
+    </body>
+</html>
