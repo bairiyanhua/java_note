@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <img src="./image/renren_titile.gif" alt="" />
+        </div>
+        <p>人人网，中国 最真实、最有效的社会平台，加入人人网，找回老朋友，结交新朋友。</p>
+        <form>
+            <div>
+                <span>电子邮箱:</span>
+                <input type="text" name="email" />
+            </div>
+            <div>
+                <span>设置密码:</span>
+                <input type="password" name="password" />
+            </div>
+            <div>
+                <span>真实姓名:</span>
+                <input type="text" name="user_name" />
+            </div>
+            <div>
+                <span>性别:</span>
+                <label for="sex_1">
+                    <input type="radio" name="sex" value="1" id="sex_1" />
+                    <span>男</span>
+                </label>
+                <label for="sex_2">
+                    <input type="radio" name="sex" value="2" id="sex_2" />
+                    <span>女</span>
+                </label>
+            </div>
+            <div>
+                <span>生日:</span>
+                <input style="width: 50px;" type="number" name="birth_year" max="2019" min="1970" step="1" />
+                <span>年</span>
+                <input style="width: 50px;" type="number" name="birth_month" max="12" min="1" step="1" />
+                <span>月</span>
+                <input style="width: 50px;" type="number" name="birth_day" max="31" min="1" step="1" />
+                <span>日</span>
+            </div>
+            <div>为什么要填写我的生日?</div>
+            <div>
+                <span>我现在:</span>
+                <select style="width: 100px;" name="resean" placeholder="请选择身份">
+                    <option value="">请选择身份</option>
+                    <option value="1">医生</option>
+                    <option value="2">老师</option>
+                </select>
+                <span>（非常重要）</span>
+            </div>
+            <div>
+                <img src="./image/renren_code.gif" alt="" />
+                <a href="javacript:void(0);">看不清换一张?</a>
+            </div>
+            <div>
+                <span>验证码:</span>
+                <input type="text" name="code" />
+            </div>
+            <div style="margin-top: 10px;">
+                <img src="./image/renren.gif" alt="" />
+            </div>
+        </form>
+    </body>
+</html>
