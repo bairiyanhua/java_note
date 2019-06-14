@@ -1,0 +1,92 @@
+列表：
+	有序列表：
+		用ol声明有序列表，每一个列表项用li，列表项前面默认有数字顺序
+	无序列表:
+		用ul声明，每一个列表项用li，列表项前面默认有实心小圆点
+	自定义列表:
+		用dl声明自定义列表，用dt声明列表的名称，用dd声明每一个列表项
+		
+表格：
+	用table声明
+	用tr声明一行
+	用td声明一列
+	用th声明表头
+	<table>
+		<tr>
+			<th>表头一</th>
+			<th>表头二</th>
+			<th>表头三</th>
+		</tr>
+		<tr>
+			<td>第一列内容</td>
+			<td>第二列内容</td>
+			<td>第三列内容</td>
+		</tr>
+		<tr>
+			<td>第一列内容</td>
+			<td>第二列内容</td>
+			<td>第三列内容</td>
+		</tr>
+	</table>
+	合并行：rowspan
+	合并列：colspan
+
+表单：
+	所有需要用户输入或者选择，并且有提交的地方都是一个表单
+	<form>标签，
+		有两个必要属性：
+			action-->表单要提交的地址
+			method-->表单提交的方式，就两个值get / post
+				区别：
+					1.get提交表单数据会在url上显示出来，不安全
+					  post提交会将数据打包成一个对象，进行传输，安全的
+					2.get提交数据大小一般在2K左右，post提交理论上服务器有多大，就可以提多大的数据
+常用表单元素：
+	文本框：text
+	密码框：password
+	单选框：radio
+	多选框：checkbox
+	文件域：file
+	下拉框：<select>--<option>
+	文本域：<textarea>
+
+	按钮：
+		提交：submit
+		重置：reset
+		普通按钮：button
+		图片按钮：image
+
+隐藏域： hidden
+只读：readonly属性
+禁用：disabled属性
+
+音频：audio
+视频：video
+	共有属性：controls 控制器
+			autoplay  自动播放
+			loop  循环播放
+
+H5新增
+ 	date
+ 	search
+ 	
+	email
+	url
+	number
+	tel
+	rang
+	color
+	time
+
+表单的简单校验：
+	placeholder： 提示语，当输入框内有值时隐藏，没值时出现
+	required： 必填
+	pattern： 和正则表达式一起使用，符合规则放行，不符合不放行
+
+
+
+
+
+
+
+	
