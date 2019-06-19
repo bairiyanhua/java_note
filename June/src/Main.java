@@ -23,19 +23,21 @@ public class Main {
 			}else if(choose==4){
 				System.out.println("---话费充值---");
 				System.out.println("请输入卡号：");
+				int cardNo=input.nextInt();
+				System.out.println("请输入金额");
+				System.out.println("充值成功，您的当前月为：");
+				int amount=input.nextInt();
 			}else if(choose==5){
 				System.out.println("---资费说明---");
 			}else if(choose==6){
 				System.out.println("---退出登录---");
 				System.out.println("谢谢使用!");
 			}
-		System.out.println("请选择");
-		
-		
+		System.out.println("****************欢迎使用*****************");
 		
 		
 		}
 		
 	}
-
 }
+

@@ -1,4 +1,4 @@
-package com.kgc.exam;
+package com1;
 
 import java.util.Random;
 

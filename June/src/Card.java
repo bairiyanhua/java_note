@@ -1,6 +1,6 @@
 
 public class Card {
-	private String cardNum;
+	private String cardNo;
 	private String userName;
 	private String password;
 	private double money;
@@ -14,10 +14,10 @@ public class Card {
 		this.packservice = packservice;
 	}
 	public String getCardNum() {
-		return cardNum;
+		return cardNo;
 	}
 	public void setCardNum(String cardNum) {
-		this.cardNum = cardNum;
+		this.cardNo = cardNum;
 	}
 	public String getUserName() {
 		return userName;

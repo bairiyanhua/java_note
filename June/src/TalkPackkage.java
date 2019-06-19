@@ -6,7 +6,7 @@ public class TalkPackkage {
 	
 	
 	public void showInfo(){
-		System.out.println("话痨套餐：通话时长为"+talkTime+":短信条数为"+smsCount+":资费是"+getPrice());
+		System.out.println("话痨套餐：通话时长为"+talkTime+":短信条数为"+smsCount);
 	}
 	public int getTalkTime() {
 		return talkTime;
