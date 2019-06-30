@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var a = 0;
+			
+			function study(){
+				for (var i=0; i<5; i++) {
+					document.write("好好学习，天天向上<br>")
+				}
+			}
+			
+			function study2(count){
+				for (var i=0; i<count; i++) {
+					document.write("好好学习，天天向上<br>");
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点击开始" onclick="study()" />
+		<input type="button" value="点击开始2" onclick="study2(prompt('请输入次数'))" />
+		<input type="text" onchange="alert('123456')" />
+		
+		<!--<input type="text" onkeydown="alert(123)"/>-->
+	</body>
+</html>

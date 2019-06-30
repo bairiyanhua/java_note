@@ -1,0 +1,70 @@
+HTML: 超文本标记语言
+基本结构：
+	<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+		
+		</body>
+	</html>
+
+DOCTYPE: 放在所有页面的最上面，指明当前页面用的是哪一种标准
+meta：声明当前页面的一些元信息
+	charset属性：指明字符编码
+	name属性：
+		keywords: 给页面设置关键字
+		description：给页面设置描述
+
+<h1>...<h6>: 标题
+<p>: 段落
+<br/>: 换行
+<hr/>： 水平线
+
+<strong>: 着重
+<b>: 加粗
+<em>: 斜体
+
+特殊符号：
+	空格：&nbsp;
+	大于：&gt;
+	小于：&lt;
+	引号：&quot;
+	版权符：
+
+<img>: 图片
+	src: 图片路径
+	width: 图片宽度
+	height： 图片高度  -->  两者只写一个，图片会自动等比例缩放
+	alt: 当图片为破图时，提示的文字
+	title: 当鼠标悬停在图片上时，提出的文字
+
+<a>: 超链接	
+	href: 链接的目标地址
+	target: 设置是从当前窗口打开，还是从一个新窗口打开
+		_self： 默认值，当前窗口打开
+		_blank: 从一个新窗口打开
+
+页面之间跳转：
+	//文字
+	<a href="index.html">跳转到首页</a>
+	//图片
+	<a href="http://www.baidu.com">
+		<img src="img/1.gif" />
+	</a>
+
+锚链接:
+	1.同页面中A点跳B点(A和B都是超链接)：
+		在B点超链接上加上name或id属性，在A点超链接上href指向B点name或id的名字(用#开头),两者都在，以id为主
+	2.甲页面A点跳乙页面B点：
+		在B点超链接上加上name或id属性，在A点超链接上href指向乙页面中的B点name或id的名字(用#开头),两者都在，以id为主
+
+功能性链接：
+	1.邮件：<a href="mailto:mayun@alibaba.com">给马云爸爸发邮件</a>
+	2.qq: <a href="tencent://message/?uin=942331536&Site=qq&Menu=yes">给化腾妈妈发QQ</a>
+
+
+
+
+
+

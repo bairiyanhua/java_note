@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			function jisuan(){
+				var a=parseInt(prompt("请输入第一个数"));
+				var b=prompt("请输入运算符");
+				var c=parseInt(prompt("请输入第二个数"));
+				switch(b){
+				case "+":
+				alert("两数运算结果为：" + a + b + c + "=" + (a+c));
+				break;
+				case "-":
+				alert("两数运算结果为：" + a + b + c + "=" + (a-c));
+				break;
+				case "*":
+				alert("两数运算结果为：" + a + b + c + "=" + (a*c));
+				break;
+				case "/":
+				alert("两数运算结果为：" + a + b + c + "=" + (a/c));
+				break;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点击计算" onclick="jisuan()"/>
+	</body>
+</html>

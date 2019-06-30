@@ -1,0 +1,1 @@
+document.write("<h1>请给我一个口碑</h1>");

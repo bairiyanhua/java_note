@@ -1,0 +1,38 @@
+1、小技巧
+	(1)myeclipse工具使用技巧：视图
+	(2)帮助文档的使用：jdk7
+        www.oracle.com
+	(3)*.java -> *.class    编译
+	*.class  编译后的字节码文件   -->*.java   反编译
+	Jad
+		解压
+		找到自己的class文件，进行反编译
+		DOS：
+			切换到jad安装目录
+			jad -s java *.class
+	FrontEndPlus   图形化
+		记住菜单命令即可File->Decompiler class File
+
+2、 数据类型及变量
+数据类型：
+	整型 int
+	浮点型 double  float
+	
+	单个字符 char
+	字符串   String
+	布尔类型  boolean  (true   false)
+
+
+使用用户键盘录入步骤：
+（1）import java.util.*;
+
+（2）//需要给用户开一个通过键盘录入程序的入口  input
+Scanner input = new Scanner(System.in);
+
+（3）使用Input获取用户键盘录入的数据
+System.out.print("请输入姓名：");
+String name = input.next();
+input.nextInt();
+input.nextDouble();
+
+

@@ -1,0 +1,26 @@
+1、JDK环境变量配置
+
+D:\Program Files\Java\jdk1.7.0_51\bin
+复制粘贴到环境变量path中，加一个英文的分号
+
+DOS（cmd），输一个命令 java -version
+
+2、Java编写步骤
+(1)*.java
+(2)javac *.java  编译-->*.class
+(3)java *   运行
+
+
+System.out.println();输出换行
+System.out.print();输出不换行
+System.out.print("\n");输出换行
+\t  输出一个空格（相当于按下键盘上的tab键）
+
+
+
+
+3、安装及配置IDE
+安装myeclipse
+需要在myeclipse中配置jdk(window->preferences->Java->Installed jres->选择自己安装的jdk路径)
+改变编译器(window->preferences->Java->Compiler->1.7)
+

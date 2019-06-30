@@ -1,0 +1,93 @@
+一 字节流
+字节输入流(读)
+    InputStream  
+		read()
+		read(byte[])
+		read(byte[],off,len)
+		close()
+    FileInputStream
+		new FileInputStream(File file)
+		new FileInputStream(String path)
+
+字节输出流(写)
+    OutputStream
+		write(int)
+		write(byte[])
+		write(byte[],off,len)	
+		close()
+		flush():强制将缓冲区清空
+    FileOutputStream
+		new FileOutputStream(File file)
+		new FileOutputStream(String path)
+		new FileOutputStream(String path,boolean append):可以指定覆盖或追加文件内容
+
+二 字符流
+字符输入流(读)
+	Reader
+		read()
+		read(char[])
+		read(char[],off,len)
+		close()
+	InputStreamReader:可以指定字符编码格式
+		new InputStreamReader(InputStream)
+		new InputStreamReader(InputStream,String charSetName)
+	FileReader
+		new FileReader(File file)
+		new FileReader(String path)
+
+	常见问题：中文乱码
+	原因：文件编码格式  和  程序环境的编码格式不一致
+
+	解决方案：
+	字符流去读的时候，指定字符流的编码格式
+
+	FileReader  无法指定编码格式，会按照文件系统默认编码格式读
+	System.out.println(System.getProperty("file.encoding"));
+	所以使用InputStreamReader
+
+
+	缓冲流BufferedReader
+	readLine()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+字符输出流（写）
+	Writer
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+BOM:浏览器对象模型，主要用于控制和浏览器相关的操作
+
+打开一个新窗口：window.open();
+	window.open("http://www.baidu.com","","width=50px,height=50px,top=50px,left=500px");
+关闭当前窗口：window.close();
+
+浏览器前进和后退：
+	window.history.forward()	前进
+	window.history.back()	后退
+	window.history.go(1) 等同于forward前进
+	window.history.go(-1) 等同于back后退
+
+js跳转页面：
+	window.location.href = "目标页面";
+	
+	当跳转的元素是a标签时，注意，要把a标签本身的跳转功能禁用
+	<a href="javascript:void(0)" onclick="window.location.href='...'">跳转</a>
+	
+	
+页面刷新：
+	window.location.reload()
+
+
+
+
+
+
+
+
+
+
+
+
+

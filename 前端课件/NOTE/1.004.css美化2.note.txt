@@ -1,0 +1,59 @@
+a标签伪类样式：
+	a:link		初始化样式
+	a:visited	点击过后的样式
+	a:hover		鼠标悬停时的样式
+	a:active	鼠标点击不放开时的样式
+	
+	顺序：LoVe/HAte
+
+列表样式：
+	list-style:none;	修改列表前的标识
+
+背景样式：
+	background-color：		背景颜色
+	background-image：		背景图片
+	background-repeat：		背景图片平铺
+	background-position：	背景图片定位
+	background-size：		背景图片大小
+	background：	background-image、background-position、background-repeat三个的总称
+
+盒子模型：
+	border
+		border-color
+		border-width
+		border-style
+	margin
+		居中对齐：两个前提条件
+			1.必须是块元素
+			2.必须设置宽度
+	padding
+		
+display属性：
+	将块元素和行内元素进行相互转换
+	值：
+		block: 把行内元素转成块元素
+		inline: 把块元素转成行内元素
+		inline-block：把行内元素或块元素转成行内块元素	
+		none: 隐藏元素
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

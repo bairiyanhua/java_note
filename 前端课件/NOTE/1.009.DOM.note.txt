@@ -1,0 +1,52 @@
+DOM：文档对象模型，处理一切和页面文档有关的操作
+
+载入当前页面的URL:
+	document.referrer
+	
+获取页面元素：
+	getElementById()
+	getElementsByName()
+	getElementsByTagName()
+
+获取/赋值页面元素内容
+	非表单元素：innerHTML
+		取值：document.getElementById("xx").innerHTML;
+		赋值：document.getElementById("xx").innerHTML = "...";
+		
+	表单元素：value
+		取值：document.getElementById("xx").value;
+		赋值：document.getElementById("xx").value = "...";
+
+Date对象：
+	年：getFullYear()
+	月：getMonths()+1 -- 0-11之间，所以月份要+1
+	日：getDate()
+	时：getHours()
+	分：getMinutes()
+	秒：getSeconds()
+	星期几：getDay()--0-6之间，0是星期天
+
+定时函数：
+	setTimeout()
+	setInterval()
+	
+	clearTimeout()
+	clearInterval()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

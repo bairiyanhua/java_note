@@ -1,0 +1,40 @@
+DOM：文档对象模型，处理一切和页面文档有关的操作
+
+载入当前页面的URL:
+	document.referrer
+	
+获取页面元素：
+	getElementById()
+	getElementsByName()
+	getElementsByTagName()
+
+获取/赋值页面元素内容
+	非表单元素：innerHTML
+		取值：document.getElementById("xx").innerHTML;
+		赋值：document.getElementById("xx").innerHTML = "...";
+		
+	表单元素：value
+		取值：document.getElementById("xx").value;
+		赋值：document.getElementById("xx").value = "...";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

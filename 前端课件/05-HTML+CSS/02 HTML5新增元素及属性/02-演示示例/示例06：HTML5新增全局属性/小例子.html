@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>小例子</title>
+
+  <style>
+	*{padding:0;margin:0;}
+	.container{width:600px;margin:50px auto;}
+	h2{font-size:18px;margin:50px 0 10px;font-weight:normal;}
+	/**给标记 换背景**/
+	mark{background:red;color:#fff;}
+	
+	p{padding:3px 5px;}
+	.green{color:#fff;background:#096;}
+	.blue{color:#fff;background:#2e89de;}
+	.graw{font-size:14px;color:#969696;margin-bottom:8px;}
+	a{font-size:14px;display:block;padding:5px;color:#3490e6}
+  </style>
+  <script>
+	/**
+	 * js控制属性designMode
+	 * on:表示页面所有元素可编辑；
+	 * off:表示页面所有元素不可编辑；
+	 */
+	//document.designMode="on";
+	document.designMode="off";
+  </script>
+ </head>
+ <body>
+	<div class="container">
+		<!--contenteditable-->
+		<h2>contenteditable</h2>
+		<p contenteditable="true" class="green">这是一个可编辑的段落。</p>
+		<!--designMode-->
+		<h2>designMode</h2>
+		<p class="blue" id="edit" >我能变成可编辑的文本。</p>
+		<!--hidden-->
+		<h2>hidden</h2>
+		<p hidden="hidden">这个段落应该被隐藏。</p>
+		<!--spellcheck-->
+		<h2>spellcheck(浏览器最好用谷歌)</h2>
+		<p contenteditable="true" spellcheck="true">这是可编辑的段落。请试着编辑文本。</p>
+		<!--tabindex-->
+		<h2>tabindex(鼠标在“我是第二个”之前点击一下，再测试)</h2>
+		<p class="graw"><b>注释：</b>请尝试使用键盘上的 "Tab" 键在链接之间进行导航。</p>
+		<a href="" tabindex="2">我是第二个</a>
+		<a href="" tabindex="1">我是第一个</a>
+		<a href="" tabindex="3">我是第三个</a>
+	</div>
+ </body>
+ <!--<script>-->
+	 <!--document.designMode='on';-->
+ <!--</script>-->
+</html>

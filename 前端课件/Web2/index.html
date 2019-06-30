@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}" />
+		<title></title>
+	</head>
+	<body>
+		<span></span>
+	</body>
+	<sript type="text/javascript">
+		setInterval (function(){
+		var date=new Date();
+		var y=date.getFullYear();
+		var M=date.getMouth()+1;
+		var d=date.getDate();
+		var h=date.geHours();
+		var m=date.getMinutes();
+		var s=date.getSeconds();
+		
+		var str=y+"-"+M+"-"+d+"-"+h+":"+m+":"+s;
+		document.getElementsByTagName("span")[0].innerHTML=str	
+		},1000);
+	
+	</sript>
+</html>
