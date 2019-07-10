@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域方法一</title>
+</head>
+<body>
+	<button id="btn">跨域</button>
+	<script src="jquery.min.js"></script>
+	<script>
+		$("#btn").click(function(){
+			$.ajax({
+				url:"http://localhost:8080/kuayu1/test.php",
+				type:"get",
+				success:function(info){
+					console.log(info);
+				},
+				error:function(errinfo){
+					console.log(errinfo);
+				}
+			});
+		})
+		/*file:///D:/Apache/AppServ/www/kuayu1/index.html
+		XMLHttpRequest cannot load http://localhost:8080/kuayu1/test.php. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access.
+		*/
+	</script>
+</body>
+</html>

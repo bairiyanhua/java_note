@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				/*$("input").bind("click", function(){
+					$(this).next().css("color", "red");
+				})*/
+				
+				$("input:first").bind({
+					click: function(){
+						$(this).next().next().css("color", "red");
+					},
+					mouseenter: function(){
+						$("p").css("color", "blue");
+					},
+					mouseleave: function(){
+						$("p").css("color", "yellow");
+					}
+				});
+				
+				$("input:last").click(function(){
+					$("input:first").unbind("click");
+				})
+				
+				
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="绑定" />
+		<input type="button" name="" id="" value="移除绑定" />
+		<p>这里是要更改的内容</p>
+	</body>
+</html>

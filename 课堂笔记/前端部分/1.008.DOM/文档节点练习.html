@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>访问当当购物车页面节点</title>
+    <link type="text/css" rel="stylesheet" href="css/cartStyle.css" />
+	<script type="text/javascript">
+		function minus(obj){
+			var price = obj.parentNode.previousElementSibling.lastElementChild.value;
+			var count = obj.nextElementSibling;
+			if(count.value <= 1){
+				alert("再减就没了呀");
+			}else{
+				count.value = parseInt(count.value)-1;
+				obj.parentNode.nextElementSibling.innerHTML = "¥"+ (price*count.value);
+				
+			}
+			
+			sum();
+		}
+		
+		function plus(obj){
+			var price = obj.parentNode.previousElementSibling.lastElementChild.value;
+			var count = obj.previousElementSibling;
+			count.value = parseInt(count.value)+1;
+			
+			obj.parentNode.nextElementSibling.innerHTML = "¥"+ (price*count.value);
+		
+			sum();
+		}
+		
+		function sum(){
+			var add1 = parseFloat(document.getElementById("price0").innerHTML.substring(1));
+			var add2 = parseFloat(document.getElementById("price1").innerHTML.substring(1));
+			document.getElementById("totalPrice").innerHTML = "¥"+(add1+add2);
+		}
+		
+	</script>
+</head>
+<body>
+
+<div class="content">
+    <div class="logo">
+        <img src="img/dd_logo.jpg"><span>关闭</span>
+    </div>
+    <div class="cartList" id="cartList">
+        <ul>
+            <li>¥<input type="text" name="price" value="21.90"></li>
+            <li><input type="button" name="minus" value="-" onclick="minus(this);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(this);"></li>
+            <li id="price0">¥21.90</li>
+            <li><p>移入收藏</p><p>删除</p></li>
+        </ul>
+        <ul>
+            <li>¥<input type="text" name="price" value="24.00"></li>
+            <li><input type="button" name="minus" value="-" onclick="minus(this);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(this);"></li>
+            <li id="price1">¥24.00</li>
+            <li><p>移入收藏</p><p>删除</p></li>
+        </ul>
+        <ol>
+            <li id="totalPrice">&nbsp;</li>
+            <li><span>结 算</span></li>
+        </ol>
+    </div>
+    <div></div>
+</div>
+</body>
+</html>

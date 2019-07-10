@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.father{
+				border: 3px solid red;
+				width: 500px;
+				height: 100px;
+				margin: 0px auto;
+				padding: 50px;
+			}
+			.child{
+				border: 3px solid blue;
+				height: 100px;
+			}
+			p{
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				var count = 0;
+				$(".father").mouseover(function(){
+					count++;
+					$("p").html(count);
+				}).mouseout(function(){
+					count++;
+					$("p").html(count);
+				})
+				
+			})
+		</script>
+		
+	</head>
+	<body>
+		<div class="father">
+			<div class="child">
+				
+			</div>
+		</div>
+		
+		<p></p>
+	</body>
+</html>

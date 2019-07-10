@@ -1,0 +1,15 @@
+
+有时候忘掉了mysql的root密码，这种情况下，如何重置root的密码呢?
+找到并编辑mysql的my.ini配置文件，在mysqld节点中添加上skip-grant-table. 如下:
+[mysqld]
+# These let you safely reset the lost root password.
+skip-grant-table
+保存好修改，重启mysql服务。
+现在就能不需要root密码的情况下连接上数据库。然后执行下面的更新:
+
+USE mysql;
+UPDATE USER
+SET    password = password('yournewpasswordhere')
+WHERE  USER = 'root'
+AND    host = 'localhost';
+这样root密码就修改好了，这个时候，将my.ini中的skip-grant-table删除，再重启mysql service

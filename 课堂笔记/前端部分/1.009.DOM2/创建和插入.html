@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function book(){
+				var radios = document.getElementsByName("book");
+				//创建一个img标签
+				var img = document.createElement("img");
+				
+				if(radios[0].checked){
+					img.setAttribute("src", "img/dog.jpg");
+				}else if(radios[1].checked){
+					img.setAttribute("src", "img/mai.jpg");
+				}
+				
+				//把img标签插入到div标签里面
+				var div = document.getElementsByTagName("div")[0];
+				div.innerHTML = "";
+				div.appendChild(img);
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+			选择你喜欢的书:
+			<label><input type="radio" name="book" onclick="book()"/>我和狗狗一起活下来</label>
+			<label><input type="radio" name="book" onclick="book()" />灰霾来了怎么办</label>
+		</p>
+		<div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>仿冬奥列表内容</title>
+	 <link rel="stylesheet" href="css/games.css">
+	 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	 <script type="text/javascript">
+	 	$(function(){
+	 		var lis = $(".gameList").children();
+	 		
+	 		$(lis).each(function(index, value){
+	 			//console.log($(this).text());
+	 			
+	 			console.log((index+1) + ": " + value.innerHTML);
+	 		})
+	 		
+	 		/*$.each(lis, function() {
+	 			console.log($(this).text());
+	 		});*/
+	 		
+	 		
+	 		//console.log(lis);
+	 		
+	 		//var li = $("li:eq(2)").prev();
+	 		//var li = $("li:eq(2)").next();
+	 		//var li = $("li:eq(2)").siblings(".aa");
+	 		//console.log(li);
+	 		
+	 		//console.log($("li:eq(2)").parents(".contain"));
+	 		
+	 	})
+	 </script>
+ </head>
+ <body>
+	<div class="contain">
+		<h2>祝福冬奥</h2>
+		<ul class="gameList">
+			<li class="aa"> 贝克汉姆：衷心希望北京能够申办成功！</li>
+			<li> 姚明：北京申冬奥是个非常棒的机会！加油！</li>
+			<li> 张虹：北京办冬奥，大家的热情定超乎想象！ </li>
+			<li> 肖恩怀特：我爱北京，支持北京申办冬奥会！</li>
+		</ul>
+	</div>
+ </body>
+</html>

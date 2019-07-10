@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 400px;
+				height: 100px;
+				border: 5px solid red;
+				margin: 15% auto;
+				transition: all 10s; 
+				font-size: 50px;
+			}
+			
+			@keyframes fontColor{
+				0% {color: red;}
+				10% {color: orange;}
+				20% {color: yellow;}
+				30% {color: green;}
+				40% {color: blue;}
+				50% {color: black;}
+				60% {color: pink;}
+				70% {color: aqua;}
+				80% {color: purple;}
+				90% {color: peru;}
+				100% {color: gray;}
+			}
+			
+			div{
+				animation: fontColor 3s infinite;
+			}
+			
+			
+			div:hover{
+				transform: rotate(1080deg);
+				/*transform: rotate(45deg);*/
+				/*transform: skew(45deg);*/
+				transition: all 10s;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			这里是要设置的字
+		</div>
+	</body>
+</html>

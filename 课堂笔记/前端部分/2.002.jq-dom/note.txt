@@ -1,0 +1,73 @@
+设置/获取样式：
+	css(): 当操作一个样式时，中间用","，当有多个样式时，用{}包起来，每一个属性值之间用":"，不同属性之间用","
+	addClass(): 可以一次设置一个，也可以一次设置多个
+	removeClass()：可以一次移除一个，也可以一次移除多个
+	toggleClass(): 连续点击，添加和移除样式
+	hasClass(): 判断是否包含指定的类样式，如果有，返回true, 如果没有，返回fasle
+
+内容操作：
+	html(): 
+	text():
+		都是对非表单元素的内容进行设置/获取，区别在于，html可以识别标签，text会把标签当做文本处理
+	val()：设置/获取表单元素的内容 
+
+节点操作：
+	创建：直接使用$()创建 , 内容可以用html()赋值，也可以直接写在标签里
+		$("<li>aaaa</li>")
+	插入：
+		append()
+		appendTo()
+			从后面插入子元素
+		prepend()
+		prependTo()
+			从前面插入子元素
+
+		after()
+		insertAfter()
+			从后面插入同辈元素
+		before()
+		insertBefore()
+			从前面插入同辈元素
+	删除：
+		empty(): 清空元素内容，不删除节点
+		remove(): 整个节点删除
+		detach(): 整个节点删除，保留绑定的事件
+	替换：
+		replaceWith()
+		replaceAll()
+	复制：
+		clone()
+	属性操作：
+		attr()
+		removeAttr()
+
+获取子元素：children()
+获取同辈元素：
+	上一个：prev()
+	下一个：next()
+	除自己以外的所有同辈：siblings()
+获取父元素：parent()
+获取祖先元素：parents()
+
+循环：
+	each()
+	
+	$(lis).each(function(){
+		console.log($(this).text());
+	})
+
+	$.each(lis, function() {
+		console.log($(this).text());
+	});
+
+	注意：function中可以有两个参数，第一个为当前元素的下标，第二个为当前的元素(JS对象)
+
+
+
+
+
+
+
+
+
+

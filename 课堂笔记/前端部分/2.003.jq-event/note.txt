@@ -1,0 +1,45 @@
+鼠标事件：
+	click()
+	mouseenter()
+	mouseleave(): 当鼠标移入子元素时，不会触发
+	mouseover()
+	mouseout(): 当鼠标移入子元素时，也会触发
+	
+键盘事件：
+	keydown()
+	keyup()
+	keypress()
+	回车键事件：
+		$(document).keydown(function(event){
+			if(event.keyCode == 13){
+				alert("回车");
+			}
+		})
+
+绑定事件：
+	bind(): 可以一次绑定一个，也可以一次绑定多个事件
+移除绑定：
+	unbind(): 如果不写参数，默认所有事件全部移除
+
+复合事件：
+	hover(): mouseover和mouseout的组合，鼠标移入移出事件
+	toggle():
+		当有参数时，为鼠标连续点击事件，效果为参数中自己设定的效果
+		当没有参数时，和其他事件配合一起用，效果为隐藏和显示(show()和hide()的组合)
+	toggleClass(): 增加和移除样式
+
+动画效果：
+	show()
+	hide()
+	
+	fadeIn()
+	fadeOut()
+	
+	slideDown()
+	slideUp()
+
+
+
+
+
+

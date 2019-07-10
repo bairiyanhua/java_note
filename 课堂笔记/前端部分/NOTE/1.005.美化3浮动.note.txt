@@ -1,0 +1,43 @@
+浮动：
+	float:
+	浮动会使元素脱离标准文档流，类似于层级提高，原有位置就会被下面的元素填充上
+	当元素全部浮动后，会出现边框塌陷，解决办法为清除浮动
+		1.在塌陷的元素中加上空的div，给div一个样式，clear:both;
+		2.给塌陷的元素加:after伪类样式，样式值为：display:block; content:""; clear:both;
+
+定位：position
+	相对定位： relative
+		相对于自身原来的位置进行定位，定位后，原来的位置会被保留
+		不会单独使用，一般都是配合绝对定位，给绝对定位设置一个有定位的祖先元素
+	绝对定位： absolute
+		1.如果有定位过后的祖先元素，就相对于这个祖先元素进行定位
+		2.如果没有，就相对于浏览器进行定位
+		定位后，原来的位置不会被保留
+	固定定位：fixed
+		只相对于浏览器进行定位
+
+文本阴影：
+	text-shadow: x平移 y平移 渲染半径 阴影颜色
+		如：text-shadow: 3px 3px 2px gray;
+盒子阴影：
+	box-shadow: 4px 4px 4px palevioletred;
+
+渐变：
+	线性渐变：background: linear-gradient(to right,red,orange,yellow,green,blue, indigo, purple);
+	径向渐变：background: radial-gradient(red,orange,yellow,green,blue, indigo, purple);
+
+变形：
+	transform：
+		translate
+		scale
+		rotate
+		skew
+过渡：
+	transition
+
+自定义动画：
+	@keyframes 名字{
+	}
+	配合 animation 一起使用
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.h3{
+				color: red;
+				font-size: 30px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<h3 style="background-color: green;">静夜思</h3>
+		<!--<h3>静夜思</h3>-->
+		<p>床前明月光</p>
+		<p>疑是地上霜</p>
+		<p>举头望明月</p>
+		<p>低头思故乡</p>
+	</body>
+	<script type="text/javascript">
+		var h3 = document.getElementsByTagName("h3")[0];
+		/*h3.style.color = "red";
+		h3.style.fontSize = "30px";*/
+//		alert(h3.style.backgroundColor);
+		
+//		h3.className = "h3";
+//		alert(document.defaultView.getComputedStyle(h3, null).backgroundColor)
+		alert(h3.currentStyle.backgroundColor)
+
+	</script>
+</html>

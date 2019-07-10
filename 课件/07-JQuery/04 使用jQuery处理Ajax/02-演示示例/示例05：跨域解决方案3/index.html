@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域方法三</title>
+</head>
+<body>
+	<button id="btn">跨域</button>
+	<script src="jquery.min.js"></script>
+	<script>
+		//fn起到定义函数的作用
+		 /*function fn(a){
+		 	console.log(a);//a就是实参“哈哈哈”
+		 }*/
+		$("#btn").click(function(){
+			$.ajax({
+				url:"http://localhost:8080/kuayu3/test.php",
+				type:"get",
+				//定义发送jsonp请求
+				dataType:'jsonp',
+				//更改定义的参数名
+				jsonp:'kyFn',//修改callback名称，但是php中也要修改成相对应的函数名
+				//指定jsonp发送的回调函数名
+				jsonpCallback:'hyly',
+				success:function(info){
+					console.log(info);
+				}
+			});
+		})
+	</script>
+</body>
+</html>

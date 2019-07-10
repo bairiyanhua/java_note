@@ -1,0 +1,141 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #FCFCFC;
+}
+
+.head{
+	border-bottom: 1px solid darkgray;
+	height: 90px;
+	background-color: white;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.head>div{
+	float: right;
+	margin-right: 10%;
+	margin-top: 1%;
+}
+a{
+	text-decoration: none;
+}
+.head>div span:last-of-type{
+	padding: 5px;
+	border: 1px solid gray;
+	width: 107px;
+    display: inline-block;
+}
+.head>div span:last-of-type img{
+	vertical-align: middle;
+}
+.head>img{
+	margin-left: 10%;
+	height: 60px;
+	margin-top: 1%;
+}
+
+.clear{
+	clear: both;
+}
+
+.margin{
+	margin-top: 3%;
+}
+
+.body{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 3%;
+}
+.body:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.bodyLift{
+	float: left;
+}
+.bodyRight{
+	float: right;
+}
+form{
+	width: 350px;
+}
+
+.title h4{
+	float: left;
+}
+.title a{
+	float: right;
+}
+
+
+.input{
+	border: 1px solid gray;
+	padding: 10px;
+	margin-top: 3%;
+}
+.input img{
+	vertical-align: middle;
+}
+.input input{
+	border: none;
+	height: 30px;
+}
+.login:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.login div{
+	float: left;
+}
+.login a{
+	float: right;
+}
+.button input{
+	width: 100%;
+    height: 45px;
+    background-color: #FF3C3C;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+.more ul{
+	float: left;
+	width: 70%;
+}
+.more li{
+	list-style: none;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: url(../img/wxf.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 4%;
+}
+.more li:hover{
+	background: url(../img/wxt.png) no-repeat;
+	background-size: 100% 100%;
+}
+.more span{
+	font-size: 13px;
+    margin-top: 2%;
+    display: inline-block;
+}
+.more span img{
+	width: 20px;
+	vertical-align: middle;
+}
+
+
+.footer{
+	text-align: center;
+	color: gray;
+	margin-top: 2%;
+}
+.footer p{
+	margin-top: 1%;
+}

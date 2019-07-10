@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function book(){
+				var radios = document.getElementsByName("book");
+				var img = document.getElementsByTagName("img")[0];
+				if(radios[0].checked){
+					img.setAttribute("src", "img/dog.jpg");
+					alert(radios[0].getAttribute("type"));
+				}else if(radios[1].checked){
+					img.setAttribute("src", "img/mai.jpg");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+			选择你喜欢的书:
+			<label><input type="radio" name="book" onclick="book()"/>我和狗狗一起活下来</label>
+			<label><input type="radio" name="book" onclick="book()" />灰霾来了怎么办</label>
+		</p>
+		<div>
+			<img />
+		</div>
+	</body>
+</html>

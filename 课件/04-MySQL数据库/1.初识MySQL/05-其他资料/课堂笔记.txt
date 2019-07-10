@@ -1,0 +1,38 @@
+一
+(1)mysql -hlocalhost -uroot -pkgc
+(2)show databases;
+(3)use **;
+(4)show tables;
+(5)如何通过命令更改用户(root)信息
+use mysql;
+
+select * from user\G;
+
+update user set password=password(新密码)
+where user='root';
+
+flush privileges;
+(6)exit;退出
+(7)?  寻求帮助
+
+二（1）创建数据库
+SQL语句
+#注释
+#创建数据库
+CREATE DATABASE IF NOT EXISTS school;
+
+#使用某个数据库
+USE school;
+
+#删除数据库
+DROP DATABASE IF EXISTS school;
+（2）创建表
+create table if not exists 表名(
+	列名  类型  属性，
+	列名  类型  属性，
+	列名  类型  属性
+)
+
+
+
+

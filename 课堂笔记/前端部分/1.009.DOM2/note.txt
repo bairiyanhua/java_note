@@ -1,0 +1,31 @@
+属性操作：
+	setAttribute("属性", "属性值")
+	getAttribute("属性")
+
+节点操作：
+	创建：document.createElement("标签名");
+	从后面插入：A.appendChild(B);  从A标签的后面插入子元素B
+	复制：XX.cloneNode()
+	从前面插入：XX.insertBefore(A, B)   在指定标签中，把A子元素插入到B子元素的前面
+	删除标签： A.removeChild(B);  从指定的A元素中删除子元素B
+	替换标签： A.replaceChile(a,b); 从指定的A元素中用a子元素替换b子元素
+	
+样式操作：
+	style: 只能操作行内样式
+	className: 操作内部或外部样式
+	
+	获取样式：
+		style只能获取行内样式
+		document.defaultView.getComputedStyle(元素, null).样式 可以操作行内、内部和外部，但是不兼容IE浏览器
+		IE浏览器独有：
+			元素.currentStyle.样式  	只有IE有用，其他浏览器不能用
+
+
+
+
+
+
+
+
+
+

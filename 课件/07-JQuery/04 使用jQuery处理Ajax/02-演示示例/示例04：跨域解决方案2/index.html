@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域方法二</title>
+</head>
+<body>
+	<button id="btn">跨域</button>
+	<script src="jquery.min.js"></script>
+	<script>
+		//fn起到定义函数的作用
+		function fn(a){
+			console.log(a);//a就是实参“哈哈哈”
+		}
+		$("#btn").click(function(){
+			var script = document.createElement('script');  
+			script.src = "http://localhost:8080/kuayu2/test.php";  
+			document.body.appendChild(script);
+		})
+		/*img/link/script src不受同源策略的影响*/
+	</script>
+</body>
+</html>

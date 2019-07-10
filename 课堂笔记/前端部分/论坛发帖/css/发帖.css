@@ -1,0 +1,51 @@
+.d1{
+	border: 1px solid hotpink;
+	background:#009966 ;
+	width: 150px ;
+	line-height: 40px;
+	color: white;
+	text-align: center;
+	border-radius: 18px;
+}
+.d1 h3{
+	line-height: 10px;
+}
+.d2{
+	border: 1px solid #DFDFDF;
+	width: 430px;
+	height: 320px;
+	display: none;
+}
+.d2 input[type="text"]{
+	border: 1px solid #DFDFDF;
+	line-height: 26px;
+	width: 360px;
+	margin: 10px;
+}
+.d2 p{
+	display: inline-block;
+	line-height: 5%;
+	line-height: 3px;
+}
+select{
+	border: 1px solid #DFDFDF;
+	height: 27px;
+	width: 150px;
+	text-align: center;
+}
+.d2 input[type="textarea"]{
+	border: 1px solid #DFDFDF;
+	line-height: 170px;
+	width: 360px;
+	margin: 10px;
+}
+.d3{
+	border: 1px solid hotpink;
+	background:#009966 ;
+	width: 100px ;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	border-radius: 30px;
+	margin-left: 10px;
+}

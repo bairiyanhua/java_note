@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				display: none;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				/*$("input").toggle(
+					function(){
+						$("img").show(2000, function(){
+							$("img").hide(2000, function(){
+								$("img").show(2000)
+							});
+						});
+					},
+					function(){
+						$("img").hide("slow", function(){
+							alert("我又出来啦");
+						});
+					}
+				)*/
+				/*$("input").toggle(
+					function(){
+						$("img").fadeIn(5000, function(){
+							alert("我又进来啦");
+						});
+					},
+					function(){
+						$("img").fadeOut(5000, function(){
+							alert("我又出来啦");
+						});
+					}
+				)*/
+				$("input").toggle(
+					function(){
+						$("img").slideDown(5000, function(){
+							alert("我又进来啦");
+						});
+					},
+					function(){
+						$("img").slideUp(5000, function(){
+							alert("我又出来啦");
+						});
+					}
+				)
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="隐藏和显示" /><br />
+		<img src="img/1.gif"/>
+		
+	</body>
+</html>

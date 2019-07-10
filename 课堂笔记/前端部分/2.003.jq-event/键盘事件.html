@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$("input").keydown(function(){
+					$("p").append("keydown  ")
+				}).keyup(function(){
+					$("p").append("keyup  ")
+				}).keypress(function(){
+					$("p").append("keypress  ")
+				})
+				
+				$(document).keydown(function(event){
+					if(event.keyCode == 13){
+						alert("回车");
+					}
+				})
+				
+				
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text" name="" id="" value="" />
+		<p></p>
+	</body>
+</html>

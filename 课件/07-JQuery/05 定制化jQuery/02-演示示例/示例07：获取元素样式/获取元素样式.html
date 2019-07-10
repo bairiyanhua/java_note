@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*#div1{ color:blue;}*/
+	</style>
+<script src="jquery-2.0.3.js"></script>
+</head>
+<body>
+	<div style="red" id="div1">课工场</div>
+</body>
+<script>
+$(function(){
+	console.log($('#div1').get(0).style.color);
+	//console.log(window.getComputedStyle( $('#div1').get(0) , null ).color);	
+	
+});
+</script>
+</html>

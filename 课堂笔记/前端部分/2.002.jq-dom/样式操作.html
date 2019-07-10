@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.p1{
+				color: red;
+				font-size: 20px;
+			}
+			.p2{
+				text-decoration: underline;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$("input:first").click(function(){
+					//$("p").css("color", "red");
+					$("p").css({"color":"red", "font-size":"20px"});
+				})
+				
+				$("input:eq(1)").click(function(){
+					$("p").addClass("p1 p2");
+				})
+				
+				$("input:eq(2)").click(function(){
+					alert($("p").css("text-decoration"));
+				})
+				
+				$("input:eq(3)").click(function(){
+					$("p").removeClass("p1 p2")
+				})
+				
+				$("input:eq(4)").click(function(){
+					$("p").toggleClass("p1 p2");
+				})
+				
+				$("input:eq(5)").click(function(){
+					alert($("p").hasClass("p1"));
+				})
+				
+				
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" value="css" />
+		<input type="button" value="addClass" />
+		<input type="button" value="getCss" />
+		<input type="button" value="removeClass" />
+		<input type="button" value="toggleClass" />
+		<input type="button" value="hasClass" /><br />
+		<p>这里是要改变的内容</p>
+	</body>
+</html>

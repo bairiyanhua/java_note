@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			/*p[class] {
+				background-color: red;
+			}*/
+			/*p[class=p1]{
+				background-color: red;
+			}*/
+			/*p[class^=p1]{
+				background-color: red;
+			}*/
+			/*p[id$=p2]{
+				background-color: red;
+			}*/
+			p[id*=p2p2]{
+				background-color: red;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<p class="p1">111111111111111</p>
+		<p class="p2">222222222222222</p>
+		<p id="p1p2">333333333333333</p>
+		<ul>
+			<li><p id="p2p2">4444444444444</p></li>
+			<li><p>5555555555555</p></li>
+			<li><p>6666666666666</p></li>
+		</ul>
+	</body>
+</html>

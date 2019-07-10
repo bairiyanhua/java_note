@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<input type="button" onclick="start()" name="" id="" value="点击显示时间" /><br />
+		<input type="button" onclick="end()" name="" id="" value="点击显示时间" /><br />
+		现在时间：北京时间：<span></span>
+	</body>
+	<script type="text/javascript">
+			/*getDate();
+			
+			function getDate(){
+				var date = new Date();
+				var y = date.getFullYear();
+				var M = date.getMonth()+1;
+				var d = date.getDate();
+				var h = date.getHours();
+				var m = date.getMinutes();
+				var s = date.getSeconds();
+				
+				var str = y+"-"+M+"-"+d+" "+h+":"+m+":"+s;
+				
+				document.getElementsByTagName("span")[0].innerHTML = str;
+				setTimeout("getDate()", 1000);
+			}*/
+			var interval;
+			function start(){
+				interval = setInterval(function(){
+					var date = new Date();
+					var y = date.getFullYear();
+					var M = date.getMonth()+1;
+					var d = date.getDate();
+					var h = date.getHours();
+					var m = date.getMinutes();
+					var s = date.getSeconds();
+					
+					var str = y+"-"+M+"-"+d+" "+h+":"+m+":"+s;
+					
+					document.getElementsByTagName("span")[0].innerHTML = str;
+				}, 1000);
+			}
+			
+			function end(){
+				clearInterval(interval);
+			}
+			
+			
+			
+		</script>
+</html>

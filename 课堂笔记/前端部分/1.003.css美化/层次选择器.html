@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			/*后代选择器   只要是后代不管儿子孙子重孙等都选择*/
+			/*ul p{
+				background-color: red;
+			}*/
+			
+			/*子选择器  只选择儿子*/
+			/*ul>p{
+				background-color: red;
+			}*/
+			
+			/*相邻兄弟选择器  往下选择相邻的兄弟，如果相邻的不是，不选择*/
+			/*.p1+p{
+				background-color: red;
+			}*/
+			
+			/*通用兄弟选择器   往下选择平级的所有兄弟*/
+			.p1~p{
+				background-color: red;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<p>111111111111111</p>
+		<p class="p1">222222222222222</p>
+		<p>333333333333333</p>
+		<ul>
+			<li><p>4444444444444</p></li>
+			<li><p>5555555555555</p></li>
+			<li><p>6666666666666</p></li>
+		</ul>
+	</body>
+</html>
