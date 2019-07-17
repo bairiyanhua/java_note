@@ -2,7 +2,7 @@ package com.kgc.exam;
 
 import java.util.Scanner;
 
-public class compare {
+public class insert {
 	//有一组学员的成绩{99,85,82,63,60},将他们按降序排列。
 	//要增加一个学员的成绩，将它插入成绩序列，并保持降序
 	public static void main(String[] args) {

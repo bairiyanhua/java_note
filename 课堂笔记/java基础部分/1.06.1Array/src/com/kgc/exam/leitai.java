@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class leitai {
 	public static void main(String[] args) {
-		// 获得武威同学的考试成绩，取得最高分输出
+		// 获得五位同学的考试成绩，取得最高分输出
 		double[] scores = new double[5];
 		Scanner input = new Scanner(System.in);
 		for (int i = 0; i < scores.length; i++) {

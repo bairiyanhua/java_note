@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @author Administrator
  *
  */
-public class Demo3 {
+public class maopao {
 	public static void main(String[] args) {
 		int[] num = {8, 4, 2, 1, 23, 344, 12};
 		
@@ -22,6 +22,15 @@ public class Demo3 {
 		}
 		
 		System.out.println(Arrays.toString(num));
+		
+		
+		 System.out.println("排序前：");
+	        System.out.println(Arrays.toString(num));
+
+	        // 排序方法，默认升序，调用之后，数组内值是排过序的
+	        Arrays.sort(num);
+	        System.out.println("排序后：");
+	        System.out.println(Arrays.toString(num));
 		
 		
 	}

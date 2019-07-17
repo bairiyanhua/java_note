@@ -6,8 +6,7 @@ public class Test1 {
 
 	public static void main(String[] args) {
 		/*
-		 * 从控制台输入5名学生的成绩
-		 * 存入数组中
+		 
 		 */
 		Scanner input = new Scanner(System.in);
 		
